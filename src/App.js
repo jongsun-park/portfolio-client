@@ -14,6 +14,7 @@ import Skill from "./components/skill";
 
 const App = () => {
   // const { space_id, token_delivery } = contentful;
+
   // const graphql = `https://graphql.contentful.com/content/v1/spaces/${space_id}/explore?access_token=${token_delivery}`;
   const query = `{
     projectsCollection {
