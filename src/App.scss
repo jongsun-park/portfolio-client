@@ -1,0 +1,77 @@
+// global styles
+
+/*
+* Typography
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans&display=swap");
+
+$default-type: "Mulish", sans-serif;
+$heading-type: "Abril Fatface", cursive;
+$flat-button-type: "Nunito Sans", sans-serif;
+$default-transition: all ease-out 300ms;
+$highlight-background: #ffe872;
+
+html,
+body {
+  font-family: $default-type;
+  line-height: 130%;
+}
+
+h1,
+h2 {
+  font-family: $heading-type;
+  letter-spacing: 1px;
+  margin: 0 0 40px;
+  line-height: 130%;
+}
+
+p {
+  line-height: 150%;
+}
+
+.flat-button {
+  font-family: $flat-button-type;
+}
+
+/*
+* Link
+*/
+a {
+  color: initial;
+  text-decoration: none;
+  transition: $default-transition;
+}
+
+a:hover,
+a:active {
+  opacity: 0.8;
+}
+
+/*
+* hightlight
+*/
+
+.highlight {
+  position: relative;
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: $highlight-background;
+    width: 0;
+    height: 50%;
+    top: 50%;
+    left: 5px;
+    // animation: ${highlight} ${delay}ms ease-out forwards;
+  }
+}
+
+/*
+* scroll behavior
+*/
+
+body,
+html {
+  scroll-behavior: smooth;
+}
