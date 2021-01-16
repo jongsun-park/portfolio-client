@@ -47,7 +47,7 @@ const App = () => {
   }, [query]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api", {
+    fetch("https://park-portfolio-backend.herokuapp.com/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
