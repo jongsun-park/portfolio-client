@@ -2,7 +2,7 @@
   "name": "storybook-react",
   "version": "0.1.0",
   "engines": {
-    "node": "12.19.0"
+    "node": "14.15.4"
   },
   "private": true,
   "dependencies": {
@@ -15,9 +15,8 @@
     "styled-components": "^5.2.1"
   },
   "scripts": {
-    "start": "react-scripts build",
-    "prestart": "npm run build:storybook",
-    "start:dev": "react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "start:storybook": "start-storybook -p 6006 -s public",
     "build:storybook": "build-storybook -s public"
   },
